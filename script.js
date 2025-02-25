@@ -10,7 +10,7 @@ const questions = [
     "If a movie doesn’t pass the Bechdel Test, it’s basically propaganda for the patriarchy.",
     "I think 'capitalism' is just a fancy word for 'oppression with extra steps.'",
     "Most statues in Western countries are problematic relics of oppression.",
-    "I'd rather die than shop at a store that doesn’t have a rainbow flag in June.",
+    "History classes should prioritize teaching about colonialism, oppression, and privilege rather than outdated narratives of 'progress' and 'achievement.",
     "If you don’t know what 'intersectionality' means, you’re part of the problem.",
     "Comedy is only funny if it punches up, never down—or sideways, just to be safe.",
     "I believe there are at least 73 genders.",
