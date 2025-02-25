@@ -26,6 +26,7 @@ const questions = [
     "I generally disdain the America working class in red states."
 ];
 
+// Category indices (0-based)
 const categories = {
     identity: [1, 3, 14, 17, 19],
     systemic: [2, 9, 10, 18, 23],
@@ -34,6 +35,7 @@ const categories = {
     language: [5, 13, 16, 22, 11]
 };
 
+// Weights
 const weights = {
     identity: 1.5,
     systemic: 1.3,
@@ -42,6 +44,7 @@ const weights = {
     language: 1.1
 };
 
+// Tiers with exact OCR detailed descriptions
 const tiers = [
     { 
         range: [0, 17], 
@@ -55,7 +58,7 @@ const tiers = [
         name: "Grumpy Skeptic", 
         shortDesc: "You’re suspicious of woke buzzwords but not mad about it.", 
         detailedDesc: "You're not storming the barricades of wokedom, but you're not buying the hype either. You probably live in a modest split-level in a small town outside Kansas City or maybe a quiet corner of North Carolina-close enough to a Walmart but far from any protest marches. Your job's steady and practical-say, a warehouse supervisor, HVAC tech, or middle school history teacher who secretly thinks the curriculum's gone soft. You grumble about 'snowflakes' over beers at the local dive bar, but you've got a sneaky suspicion the world's unfair-just not enough to do yoga about it. You'll squint at a Pride flag like it's a math problem, then shrug and mow your lawn. Change? Sure, if it doesn't mess with your Sunday football.", 
-        img: "images/grumpy-skeptic.jpg" 
+        img: "images/grumbling-skeptic.jpg" 
     },
     { 
         range: [35, 51], 
@@ -153,6 +156,7 @@ function calculateScore() {
     const wif = (saCount * 0.5) - (sdCount * 0.5);
     let finalScore = weightedScore + wif;
 
+    // Ensure finalScore stays within valid range
     if (finalScore < 0) finalScore = 0;
 
     const tier = tiers.find(t => finalScore >= t.range[0] && finalScore <= t.range[1]) || tiers[0];
@@ -174,8 +178,7 @@ function calculateScore() {
     `;
 
     const tierImage = document.getElementById("tierImage");
-    tierImage.src = tier.img;
-    tierImage.style.maxWidth = "600px";
+    tierImage.src = tier.img; // Removed inline maxWidth - handled by CSS
     document.getElementById("result").classList.remove("hidden");
 }
 
