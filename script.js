@@ -52,10 +52,10 @@ const tiers = [
     },
     { 
         range: [18, 34], 
-        name: "Grumbling Skeptic", 
+        name: "Grumpy Skeptic", 
         shortDesc: "You’re suspicious of woke buzzwords but not mad about it.", 
         detailedDesc: "You're not storming the barricades of wokedom, but you're not buying the hype either. You probably live in a modest split-level in a small town outside Kansas City or maybe a quiet corner of North Carolina-close enough to a Walmart but far from any protest marches. Your job's steady and practical-say, a warehouse supervisor, HVAC tech, or middle school history teacher who secretly thinks the curriculum's gone soft. You grumble about 'snowflakes' over beers at the local dive bar, but you've got a sneaky suspicion the world's unfair-just not enough to do yoga about it. You'll squint at a Pride flag like it's a math problem, then shrug and mow your lawn. Change? Sure, if it doesn't mess with your Sunday football.", 
-        img: "images/grumbling-skeptic.jpg" 
+        img: "images/grumpy-skeptic.jpg" 
     },
     { 
         range: [35, 51], 
