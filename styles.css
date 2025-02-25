@@ -9,6 +9,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    max-width: 100%; /* Fit mobile screens */
 }
 
 .question {
@@ -18,7 +19,11 @@ body {
 .question p {
     font-weight: bold;
     margin-bottom: 0.5rem;
-    font-size: 20px; /* Bigger font size for questions */
+    font-size: clamp(16px, 4vw, 24px); /* Scale from 16px to 24px */
+}
+
+.form-check {
+    margin-bottom: 0.5rem; /* Space radio options */
 }
 
 .btn-primary {
@@ -42,7 +47,7 @@ body {
 }
 
 .breakdown {
-    font-size: 0.9rem;
+    font-size: clamp(14px, 3vw, 18px); /* Responsive breakdown text */
     color: #555;
 }
 
@@ -52,4 +57,15 @@ body {
 
 .hidden {
     display: none;
+}
+
+#tierImage {
+    max-width: 100%; /* Snap to device width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media (min-width: 768px) {
+    #tierImage {
+        max-width: 600px; /* Larger on desktop */
+    }
 }
