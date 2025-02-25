@@ -1,0 +1,54 @@
+/* Custom overrides for Bootstrap */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.question {
+    margin-bottom: 1.5rem;
+}
+
+.question p {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    border-color: #007BFF;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #b02a37;
+    border-color: #b02a37;
+}
+
+.breakdown {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.breakdown p {
+    margin: 0.3rem 0;
+}
+
+.hidden {
+    display: none;
+}
