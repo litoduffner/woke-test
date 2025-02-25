@@ -14,7 +14,7 @@ const questions = [
     "If you don’t know what 'intersectionality' means, you’re part of the problem.",
     "Comedy is only funny if it punches up, never down—or sideways, just to be safe.",
     "I believe there are at least 73 genders.",
-    "I’ve canceled at least one friend for Donald Trump.",
+    "I’ve canceled at least one friend for voting Donald Trump.",
     "Math is a tool of Western oppression because '2 + 2 = 4' ignores indigenous counting systems.",
     "We should ban words like 'mother' or 'father' because they’re 'gendered violence,' replacing them with 'birthing unit' and 'sperm contributor'—and correcting strangers mid-conversation if they slip up.",
     "Canceling historical figures for not meeting diversity standards is the right thing to do.",
