@@ -159,7 +159,7 @@ function calculateScore() {
     // Ensure finalScore stays within valid range
     if (finalScore < 0) finalScore = 0; // Default to lowest tier if negative
 
-    const tier = tiers.find(t => finalScore >= t.range[0] && finalScore <= t.range[1]) || tiers[0]; // Fallback to first tier if no match
+    const tier = tiers.find(t => finalScore >= t.range[0] && finalScore <= t.range[1]) || tiers[0];
 
     document.getElementById("tier").textContent = `You are a ${tier.name}!`;
     document.getElementById("shortDesc").textContent = tier.shortDesc;
@@ -177,40 +177,9 @@ function calculateScore() {
         <p>Woke Intensity Factor: ${wif.toFixed(1)}</p>
     `;
 
-    document.getElementById("tierImage").src = tier.img;
-    document.getElementById("result").classList.remove("hidden");
-}
-
-    const weightedScore = (
-        scores.identity * weights.identity +
-        scores.systemic * weights.systemic +
-        scores.virtue * weights.virtue +
-        scores.climate * weights.climate +
-        scores.language * weights.language
-    );
-
-    const wif = (saCount * 0.5) - (sdCount * 0.5);
-    const finalScore = weightedScore + wif;
-
-    const tier = tiers.find(t => finalScore >= t.range[0] && finalScore <= t.range[1]);
-
-    document.getElementById("tier").textContent = `You are a ${tier.name}!`;
-    document.getElementById("shortDesc").textContent = tier.shortDesc;
-    document.getElementById("detailedDesc").textContent = tier.detailedDesc;
-    document.getElementById("score").textContent = `Total Score: ${finalScore.toFixed(1)} / 104`;
-
-    const breakdown = document.getElementById("breakdown");
-    breakdown.innerHTML = `
-        <p><strong>Score Breakdown:</strong></p>
-        <p>Identity & Gender: ${(scores.identity * weights.identity).toFixed(1)} / 22.5</p>
-        <p>Systemic Inequality: ${(scores.systemic * weights.systemic).toFixed(1)} / 19.5</p>
-        <p>Virtue Signaling: ${(scores.virtue * weights.virtue).toFixed(1)} / 15</p>
-        <p>Climate & Lifestyle: ${(scores.climate * weights.climate).toFixed(1)} / 18</p>
-        <p>Language & Culture: ${(scores.language * weights.language).toFixed(1)} / 16.5</p>
-        <p>Woke Intensity Factor: ${wif.toFixed(1)}</p>
-    `;
-
-    document.getElementById("tierImage").src = tier.img;
+    const tierImage = document.getElementById("tierImage");
+    tierImage.src = tier.img;
+    tierImage.style.maxWidth = "600px"; // Double the image size from 300px to 600px
     document.getElementById("result").classList.remove("hidden");
 }
 
