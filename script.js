@@ -1,7 +1,7 @@
 const questions = [
     "When I see people with blue hair, I say to myself, 'These are my people.'",
     "Men who transition should be allowed to play in women's sports.",
-    "You notice and challenge subtle, often unintentional micr-oaggressions or slights—like someone assuming a person’s role based on their appearance—because you see how they reinforce bigger biases.",
+    "You notice and challenge subtle, often unintentional micro-aggressions or slights—like someone assuming a person’s role based on their appearance—because you see how they reinforce bigger biases.",
     "Your pronouns should always be displayed on your social media profile pages.",
     "I'd rather die than shop at a store that doesn't have a rainbow flag in June.",
     "I think 'illegal alien' is just a mean way of saying 'undocumented traveler,' and we should welcome them with open borders.",
